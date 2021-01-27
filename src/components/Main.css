@@ -1,0 +1,55 @@
+.Main {
+  min-height: calc(100vh - 225px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.Main > div {
+  display: grid;
+  grid: auto 60px / repeat(2, 1fr);
+  width: 100%;
+  max-width: 350px;
+  gap: 15px;
+}
+
+.refresh,
+.save {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+}
+
+.refresh {
+  background-color: rgb(92, 92, 241);
+  border: rgb(255, 255, 255) 5px solid;
+}
+
+.save {
+  background-color: rgb(91, 212, 81);
+  border: rgb(255, 255, 255) 5px solid;
+}
+
+@media only screen and (min-width: 768px) {
+  .Main > div {
+    grid: auto 75px / repeat(2, 1fr);
+    max-width: 550px;
+    gap: 20px;
+  }
+
+  .refresh,
+  .save {
+    font-size: x-large;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Main > div {
+    grid: auto 75px / repeat(2, 1fr);
+    max-width: 750px;
+    gap: 20px;
+  }
+}
